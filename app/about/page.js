@@ -1,0 +1,12 @@
+import PageHero from '@/components/PageHero';
+import SectionHeader from '@/components/SectionHeader';
+import CTA from '@/components/CTA';
+import { values, governancePrinciples } from '@/data/site';
+
+export default function About(){return <>
+<PageHero eyebrow="About Aurion" title="A healthcare intelligence company focused on better decisions and stronger outcomes." text="Aurion Health Intelligence Limited is built around AI strategy, health data analytics, public health intelligence, responsible technology, and African health-system transformation." img="/images/futuristic-healthcare-team-collaboration.png"/>
+<section className="section"><div className="container grid-2"><div className="card"><div className="eyebrow">Mission</div><h3>Deliver intelligent insights for better health.</h3><p>To empower healthcare and public health institutions with AI-driven knowledge, data intelligence, and innovative solutions that improve decisions, efficiency, and outcomes.</p></div><div className="card"><div className="eyebrow">Vision</div><h3>Become a trusted African health intelligence partner.</h3><p>To be recognized for advancing AI-driven health innovation, responsible public-health intelligence, and data-powered transformation across Nigeria and Africa.</p></div></div></section>
+<section className="section alt"><div className="container split"><div className="image-panel"><img src="/images/futuristic-healthcare-data-interface-globe.png" alt="Global health data intelligence" /></div><div><SectionHeader eyebrow="Brand identity" title="Intelligence. Impact. Integrity.">The Aurion identity combines health, intelligence, data signals, and movement. The brand should feel African, professional, digital, responsible, and human.</SectionHeader><div className="grid-2">{values.map(v=><div className="card" key={v}><h3>{v}</h3><p>One of the core values shaping Aurion’s voice, design, and service delivery.</p></div>)}</div></div></div></section>
+<section className="section"><div className="container governance-card"><div className="copy"><SectionHeader eyebrow="Responsible AI" title="Trust and governance are part of the foundation.">Healthcare data is sensitive. Aurion’s approach values privacy, transparency, accountability, security, and human-centered decision support.</SectionHeader><div className="governance-list">{governancePrinciples.map(v=><span key={v}>✓ {v}</span>)}</div></div><div className="visual"><img src="/images/responsible-ai-governance.png" alt="Responsible AI and data governance" /></div></div></section>
+<CTA />
+</>}

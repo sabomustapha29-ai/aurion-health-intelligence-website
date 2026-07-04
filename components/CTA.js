@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function CTA(){return <section className="deep-section section"><div className="container split"><div><div className="eyebrow">Partner with Aurion</div><h2>Let’s build smarter health intelligence together.</h2><p>Start a conversation about AI strategy, dashboards, public health intelligence, training, research, or a pilot project.</p></div><Link className="btn" href="/contact">Contact Aurion</Link></div></section>}
