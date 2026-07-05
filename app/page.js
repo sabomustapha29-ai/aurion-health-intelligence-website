@@ -48,7 +48,7 @@ export default function Home(){
 
     <section className="section alt">
       <div className="container">
-        <SectionHeader center eyebrow="Impact areas" title="What Aurion helps health organizations achieve.">The website now leads with outcomes, not just technology. AI and data are positioned as tools for measurable health-system value.</SectionHeader>
+        <SectionHeader center eyebrow="Impact areas" title="What Aurion helps health organizations achieve.">AI, analytics, and dashboards are used as practical tools for faster decisions, stronger operations, and measurable health-system value.</SectionHeader>
         <div className="outcome-grid">
           {impactAreas.map(([title, text],i)=><div className="outcome-card" key={title}><div className="num">0{i+1}</div><h3>{title}</h3><p>{text}</p></div>)}
         </div>
@@ -99,7 +99,7 @@ export default function Home(){
     <section className="section">
       <div className="container split">
         <div>
-          <SectionHeader eyebrow="Who we serve" title="Built for public health, healthcare delivery, research, and innovation partners.">Aurion should look like a focused African health intelligence consulting firm, with clear client groups and pilot opportunities.</SectionHeader>
+          <SectionHeader eyebrow="Who we serve" title="Built for public health, healthcare delivery, research, and innovation partners.">Aurion supports institutions and partners that need clearer data, better visibility, practical AI adoption, and stronger health-system decision support.</SectionHeader>
           <div className="client-grid">{clientGroups.map(group=><div className="client-pill" key={group}>{group}</div>)}</div>
         </div>
         <div className="image-panel"><img src="/images/africa-health-intelligence-map.png" alt="Africa health intelligence map" /></div>
@@ -108,7 +108,7 @@ export default function Home(){
 
     <section className="section alt">
       <div className="container">
-        <SectionHeader center eyebrow="Visual intelligence" title="Professional health-tech visuals across the website.">The updated direction uses data interfaces, team collaboration, command-centre analytics, and digital health images in the right places.</SectionHeader>
+        <SectionHeader center eyebrow="Visual intelligence" title="Professional health-tech visuals across the website.">Aurion uses data interfaces, team collaboration visuals, command-centre analytics, and digital health imagery to communicate intelligence clearly.</SectionHeader>
         <div className="homepage-gallery">
           <img src="/images/futuristic-healthcare-data-interface-globe.png" alt="Healthcare data interface globe" />
           <div className="gallery-stack"><img src="/images/futuristic-healthcare-team-collaboration.png" alt="Healthcare team collaboration"/><img src="/images/futuristic-healthcare-digital-ward.png" alt="Digital ward health technology"/></div>
@@ -137,7 +137,7 @@ export default function Home(){
             <source src="/videos/aurion-health-intelligence-hero-video.webm" type="video/webm" />
             <source src="/videos/aurion-health-intelligence-hero-video.mp4" type="video/mp4" />
           </video>
-          <div className="overlay"><div><h2>From healthcare data to decision-ready intelligence.</h2><p>This video visual now supports the brand as a premium hero, solution banner, and product showcase asset.</p></div></div>
+          <div className="overlay"><div><h2>From healthcare data to decision-ready intelligence.</h2><p>A visual story of how health data, people, systems, and responsible technology can work together for better decisions.</p></div></div>
         </div>
       </div>
     </section>
@@ -159,7 +159,7 @@ export default function Home(){
 
     <section className="section alt explore-section">
       <div className="container">
-        <SectionHeader center eyebrow="Explore Aurion" title="Choose the next step that matches your interest.">A cleaner explore section helps visitors move quickly from interest to action, whether they want solutions, the command-centre prototype, the team model, or partnership contact.</SectionHeader>
+        <SectionHeader center eyebrow="Explore Aurion" title="Choose the next step that matches your interest.">Move quickly to the area that matters most: solutions, the command-centre prototype, open collaboration roles, or partnership conversations.</SectionHeader>
         <div className="explore-grid">
           {exploreCards.map(([title,text,href,cta])=><Link className="explore-card" href={href} key={title}><span>{cta}</span><h3>{title}</h3><p>{text}</p><b>Continue →</b></Link>)}
         </div>

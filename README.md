@@ -1,25 +1,21 @@
-# Aurion Health Intelligence Brand Website — V4
+# Aurion Health Intelligence Limited Website — V8 Final Corrections
 
-This is the V4 recommended website direction for Aurion Health Intelligence Limited.
+This is the corrected deployment-ready version of the Aurion Health Intelligence Limited website.
 
-## What changed in V4
+## Key corrections in V8
 
-- Rebuilt the homepage flow using a consulting-style structure
-- Added stronger outcome-led positioning
-- Added responsible AI and data governance section
-- Added who-we-serve section
-- Added stronger product suite section
-- Added team and collaboration model section
-- Added pilot opportunities section
-- Added insight themes for thought leadership
-- Integrated the hero video and health-tech PNG visuals
-- Increased the website content width for a more premium look
-- Kept the Aurion blue-green brand identity throughout
+- Added stronger SEO metadata for Google and social previews.
+- Added Open Graph preview image.
+- Added favicon files for browser tabs and Apple devices.
+- Added `robots.txt` and `sitemap.xml` through Next.js app routes.
+- Removed the lock-file dependency issue that caused Vercel install problems.
+- Removed internal wording such as “the website now...” from public page copy.
+- Refined homepage copy, explore copy, partner copy, and contact guidance.
+- Kept the Aurion blue-green brand style, video visuals, PNG visuals, and open team model.
 
 ## Run locally
 
 ```bash
-cd aurion-health-intelligence-brand-website-v4
 npm install
 npm run dev
 ```
@@ -30,45 +26,24 @@ Open:
 http://localhost:3000
 ```
 
-## Main folders
+## Build locally
 
-```text
-app/              Website pages
-components/       Header, footer, hero and section components
-data/site.js      Navigation, services, products, team, clients and insights
-public/images/    Branded PNG visuals
-public/videos/    Hero and brand motion videos
-public/brand/     Logo and brand guide assets
+```bash
+npm run build
 ```
 
-## Notes
+## Deploy update to GitHub and Vercel
 
-The contact form is a front-end placeholder. Connect it to Formspree, EmailJS, a backend API, or a CRM before publishing.
+After copying these files into the existing GitHub project folder:
 
-The website uses early-stage but professional wording: it presents Aurion as a small but serious African health intelligence consulting firm with a flagship prototype and pilot-ready product concepts.
+```bash
+git add .
+git commit -m "Final SEO favicon and wording corrections"
+git push
+```
 
+Vercel will redeploy automatically after the push.
 
-## V5 Typography Update
-- Reduced oversized hero and section fonts
-- Balanced card, product, insight, and video heading sizes
-- Kept the wider premium layout, media visuals, and brand identity
+## Important contact note
 
-
-## V7 open team update
-
-This version uses a transparent founder-led team structure with open collaboration roles. The Team page clearly labels roles as open collaboration opportunities instead of implying a fully hired staff team.
-
-Key team roles included:
-- Founder / Strategy Lead
-- Technology & Product Lead — Open Collaboration Role
-- AI & Data Intelligence Lead — Open Collaboration Role
-- Public Health & Research Lead — Open Collaboration Role
-- Design & Brand Experience Lead — Open Collaboration Role
-- Partnerships & Growth Lead — Open Collaboration Role
-- Training & Capacity Building Lead — Open Collaboration Role
-
-
-## V7 update
-- Polished Contact page with cleaner inquiry flow, direct email CTA, contact focus areas, and inquiry checklist.
-- Added homepage Explore Aurion section.
-- Expanded footer Explore links and improved footer contact block.
+The website currently uses `contact@aurionhealthintelligence.com` as the professional public-facing email. Replace it only when that mailbox is active, or set up a professional domain email before sharing widely.

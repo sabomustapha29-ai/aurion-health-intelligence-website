@@ -64,7 +64,7 @@ export default function Contact(){
         <div>
           <div className="eyebrow">Before you write</div>
           <h2>A strong inquiry helps Aurion respond faster.</h2>
-          <p>Visitors now have a clearer contact journey: choose a focus area, send a direct email, or prepare a concise project/collaboration message.</p>
+          <p>A clear inquiry helps us understand the problem, the data or workflow involved, and the most useful next step for collaboration.</p>
         </div>
         <div className="checklist-grid">
           {inquiryChecklist.map((item,index)=><div key={item} className="checklist-item"><span>0{index+1}</span>{item}</div>)}
