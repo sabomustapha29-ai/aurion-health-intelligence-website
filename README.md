@@ -1,19 +1,18 @@
-# Aurion Health Intelligence Limited Website — V8 Final Corrections
+# Aurion Health Intelligence Website — V9 Mobile Polish
 
-This is the corrected deployment-ready version of the Aurion Health Intelligence Limited website.
+This version applies the V8 final corrections plus a mobile-first hero/layout fix based on the phone screenshot.
 
-## Key corrections in V8
+## What changed in V9
 
-- Added stronger SEO metadata for Google and social previews.
-- Added Open Graph preview image.
-- Added favicon files for browser tabs and Apple devices.
-- Added `robots.txt` and `sitemap.xml` through Next.js app routes.
-- Removed the lock-file dependency issue that caused Vercel install problems.
-- Removed internal wording such as “the website now...” from public page copy.
-- Refined homepage copy, explore copy, partner copy, and contact guidance.
-- Kept the Aurion blue-green brand style, video visuals, PNG visuals, and open team model.
+- Fixed the mobile hero so it no longer stays in a narrow two-column layout.
+- Stacked the hero text and video properly on phones.
+- Reduced mobile hero heading size.
+- Made hero buttons full width on phones.
+- Improved mobile spacing, card radius, and video block size.
+- Added overflow protection to avoid horizontal scrolling.
+- Kept V8 SEO, favicon, sitemap, robots, videos, PNG visuals, and final public wording corrections.
 
-## Run locally
+## Local run
 
 ```bash
 npm install
@@ -26,24 +25,17 @@ Open:
 http://localhost:3000
 ```
 
-## Build locally
+## Deploy update
+
+Copy this folder into your current GitHub working folder, then commit and push:
 
 ```bash
-npm run build
-```
-
-## Deploy update to GitHub and Vercel
-
-After copying these files into the existing GitHub project folder:
-
-```bash
+cd ~/Downloads
+unzip -o aurion-health-intelligence-brand-website-v9-mobile-polish.zip
+rsync -av --delete --exclude='.git' --exclude='node_modules' --exclude='.next' aurion-health-intelligence-brand-website-v9-mobile-polish/ aurion-health-intelligence-brand-website-v7-contact-explore-polish/
+cd aurion-health-intelligence-brand-website-v7-contact-explore-polish
+git status
 git add .
-git commit -m "Final SEO favicon and wording corrections"
-git push
+git commit -m "Apply V9 mobile polish"
+git push origin main
 ```
-
-Vercel will redeploy automatically after the push.
-
-## Important contact note
-
-The website currently uses `contact@aurionhealthintelligence.com` as the professional public-facing email. Replace it only when that mailbox is active, or set up a professional domain email before sharing widely.
